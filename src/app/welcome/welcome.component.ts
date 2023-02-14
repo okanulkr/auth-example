@@ -13,7 +13,6 @@ export class WelcomeComponent {
   @Input()
   set token(value: string) {
     this._token = value;
-    console.log(value);
     this.getGreeting();
   }
   get token(): string {
